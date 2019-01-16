@@ -3,7 +3,7 @@
 In JavaScript, a function always has access to the context in which it was created. This is called closure.
 
 
-Global variable VS Local variable
+Global variable  VS  Local variable
 
 - JavaScript variables can belong to the local or global scope.
 
@@ -22,6 +22,11 @@ Variable Lifetime
 
 - Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
 
+
+
+All functions have access to the global scope.  
+
+In JavaScript, all functions including nested functions have access to the scope "above" them.
 
 
 https://www.udemy.com/the-complete-javascript-course/learn/v4/content
