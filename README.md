@@ -2,6 +2,8 @@
 
 In JavaScript, a function always has access to the context in which it was created. This is called closure.
 
+A closure is a function having access to the parent scope, even after the parent function has closed.
+
 
 Global variable  VS  Local variable
 
