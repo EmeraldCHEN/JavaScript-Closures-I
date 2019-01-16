@@ -2,9 +2,19 @@
 
 In JavaScript, a function always has access to the context in which it was created. This is called closure.
 
-JavaScript variables can belong to the local or global scope.
 
-Global variables can be made local (private) with closures.
+Global variable VS Local variable
+
+- JavaScript variables can belong to the local or global scope.
+
+- In a web page, global variables belong to the window object.
+
+- Global variables can be used (and changed) by all scripts in the page (and in the window).
+
+- A local variable can only be used inside the function where it is defined. It is hidden from other functions and other scripting code.
+
+- Global variables can be made local (private) with closures.
+
 
 Variable Lifetime
 
