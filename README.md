@@ -6,6 +6,12 @@ JavaScript variables can belong to the local or global scope.
 
 Global variables can be made local (private) with closures.
 
+Variable Lifetime
+
+- Global variables live as long as your application (your window / your web page) lives.
+
+- Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
+
 
 
 https://www.udemy.com/the-complete-javascript-course/learn/v4/content
