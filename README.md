@@ -1,4 +1,12 @@
-# Closure
+# JavaScript Closures
+
+In JavaScript, a function always has access to the context in which it was created. This is called closure.
+
+JavaScript variables can belong to the local or global scope.
+
+Global variables can be made local (private) with closures.
+
+
 
 https://www.udemy.com/the-complete-javascript-course/learn/v4/content
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
