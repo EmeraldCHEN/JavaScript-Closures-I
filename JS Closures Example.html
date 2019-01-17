@@ -6,9 +6,11 @@
   <p id="demo">0</p>
 
 <script>
-// The variable add is assigned the return value of a self-invoking function which only runs once to set the counter to 0 & return a function expression
+/* The variable add is assigned the return value of a self-invoking function which only runs once to set the counter to 0 & return a function expression
+   This way add becomes a function that can access the counter in the parent scope. 
+   This is called a JavaScript closure. It makes it possible for a function to have "private" variables.   */  
 let add = (function () {
-  let counter = 0;
+  let counter = 0;   // counter is protected by the scope of the anonymous function, and can only be changed using the add function.
   return function () {
     counter += 1; 
     return counter;
@@ -22,12 +24,5 @@ function myFunction(){
 </body>
 </html>
 
-
-
-This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.
-
-This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
-
-The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
 
 <!-- Retrieved from https://www.w3schools.com/js/js_function_closures.asp -->
