@@ -32,8 +32,8 @@ console.log(ducky.getHatchedEggCount()); // 10
     }
     return displayName;
  }
-  
  let myFunc = init();
+ // when myFunc is invoked, the variable name remains available for use and "Mozilla" is passed to console
  myFunc(); // "Mozilla"
 
  init()(); // get the same result as above 
