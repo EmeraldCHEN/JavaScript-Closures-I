@@ -24,6 +24,9 @@ console.log(ducky.getHatchedEggCount()); // 10
 
  function init() {
     let name = 'Mozilla'; // name is a local variable created by init
+     
+    // Nested functions have access to variables declared in their outer scope.
+     
     function displayName() { // displayName() is the inner function, a closure
       console.log(name);  // displayName() uses variable declared in the parent function 
     }
