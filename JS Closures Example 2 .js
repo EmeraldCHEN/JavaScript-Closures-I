@@ -39,6 +39,31 @@ console.log(ducky.getHatchedEggCount()); // 10
  init()(); // get the same result as above 
 
 
+/************************  Another slightly more interesting example  ***********************************************/
+
+function makeAdder(x){
+    return function(y){
+        return x * y;
+    };
+}
+/* add5 and add10 are both closures. 
+   They share the same function body definition, 
+   but store different lexical environments. 
+   In add5's lexical environment, x is 5, 
+   while in the lexical environment for add10, x is 10      */
+let add5 = makeAdder(5);
+let add10 = makeAdder(10);
+
+console.log(add5(2)); // 10
+console.log(add10(2)); // 20
+
+
+
+
+
+
+
+
 // Retrieved from https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-closure-to-protect-properties-within-an-object-from-being-modified-externally/
 
 // Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
