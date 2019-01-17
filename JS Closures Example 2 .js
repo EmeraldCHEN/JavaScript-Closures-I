@@ -19,4 +19,26 @@ let ducky = new Bird();
 console.log(ducky.getHatchedEggCount()); // 10
 
 
+
+/********  Another example    ****************************************************************************************************/
+
+function makeFunc() {
+    let name = 'Mozilla';
+    function displayName() {
+      console.log(name);
+    }
+    return displayName;
+}
+  
+let myFunc = makeFunc(); 
+myFunc(); // "Mozilla"
+  
+makeFunc()(); // get the same result as above 
+
+
+
 // Retrieved from https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/use-closure-to-protect-properties-within-an-object-from-being-modified-externally/
+
+// Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+
