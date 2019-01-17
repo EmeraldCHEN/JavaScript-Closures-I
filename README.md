@@ -33,6 +33,6 @@ Variable Lifetime
 
 
 https://www.udemy.com/the-complete-javascript-course/learn/v4/content
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
 
 
