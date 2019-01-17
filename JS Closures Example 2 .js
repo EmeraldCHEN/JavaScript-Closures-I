@@ -23,9 +23,9 @@ console.log(ducky.getHatchedEggCount()); // 10
 /********  Another example    ****************************************************************************************************/
 
  function init() {
-    let name = 'Mozilla';
-    function displayName() {
-      console.log(name);
+    let name = 'Mozilla'; // name is a local variable created by init
+    function displayName() { // displayName() is the inner function, a closure
+      console.log(name);  // displayName() uses variable declared in the parent function 
     }
     return displayName;
  }
